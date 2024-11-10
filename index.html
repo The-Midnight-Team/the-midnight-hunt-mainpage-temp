@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Midnight Hunt 1.0 筹备中……</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row; /* 默认横向布局 */
+            min-height: 100vh;
+            overflow: hidden;
+            background-color: #1a1a40; /* 背景色: 深蓝色 */
+            color: #e0e0e0; /* 文字颜色: 浅灰色 */
+        }
+
+        .poster {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            background: url('poster.webp') no-repeat center center;
+            background-size: contain; /* 使背景图适应区域并完整显示 */
+            min-height: 100vh; /* 保证海报区域至少占满视窗高度 */
+            width: 100%; /* 确保宽度充满 */
+            margin: 20px; /* 给海报区域增加外边距 */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 内容区域居中 */
+            align-items: center;
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(10, 10, 30, 0.8); /* 内容区域背景为半透明深色 */
+            border-radius: 10px; /* 圆角效果 */
+            margin: 20px; /* 给内容区域周围增加一些间距 */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff; /* 标题颜色: 白色 */
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #ddd; /* 正文颜色: 浅灰色 */
+        }
+
+        a {
+            color: #1e90ff; /* 链接颜色: 浅蓝色 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .additional-info {
+            text-align: center;
+            font-size: 1em; /* 适当的字体大小 */
+            color: #ccc; /* 额外信息颜色: 更浅的灰色 */
+            margin-top: 20px; /* 为额外信息添加一些间距 */
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column; /* 在小屏幕上调整为纵向布局 */
+            }
+
+            .poster {
+                order: 2; /* 海报在下方 */
+                height: auto; /* 允许海报区域自适应 */
+                min-height: 300px; /* 设置最小高度 */
+                margin: 10px; /* 在小屏幕上调整海报周围的间距 */
+            }
+
+            .content {
+                order: 1; /* 内容在上方 */
+                margin: 10px; /* 在小屏幕上调整周围空间 */
+                border-radius: 0; /* 在小屏幕上去掉圆角 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster"></div>
+    <div class="content">
+        <h1>The Midnight Hunt 1.0 筹备中</h1>
+        <p></p>
+        <p>QQ 群：<a href="https://qm.qq.com/q/O5vmr6JFiC">605387167</a> <br> 资讯站：<a href="https://post.midnight.school">post.midnight.school</a></p>
+        
+        <!-- 在这里添加额外信息 -->
+        <div class="additional-info">
+            &copy; The Midnight Team
+        </div>
+    </div>
+</body>
+</html>
