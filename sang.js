@@ -12,6 +12,6 @@
 │ 種 │ 職 │ 業 │ 清 │
 └────┴────┴────┴────┘`;
     const info = "LILAC 桑 2026";
-    const declaration = "（以上内容并非 The Midnight Hunt 1.0 的一部分，The Midnight Hunt 1.0 也并非“LILAC 桑”企划的一部分。）";
+    const declaration = "（以上内容并非 The Midnight Hunt 1.0 的一部分，The Midnight Hunt 1.0 也并非“LILAC 桑”企划的一部分。）\n（但上面的内容确实是“LILAC 桑”企划的一部分）";
     console.log(asciiTable + "\n" + info + "\n----------\n" + declaration);
 })();
